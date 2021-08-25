@@ -1,2 +1,2 @@
 # Codewar-katas
-Depository for my Codewars.com tasks
+First public Depository for my Codewars.com kata tasks.
