@@ -1,24 +1,27 @@
 def while_next(args):
-    args.append(-1000)
     big = []
     i = 0
     while i < len(args):
         if i < len(args) - 2:
             if (args[i]+1 == args[i+1]):
                 small = []
-                while (args[i]+1 == args[i+1]):
+                while (args[i]+1 == args[i+1]) and (i < len(args)-2):
                     small.append(args[i])
                     i += 1
-                big.append(small)
+                if (args[i] - 1) == (args[i-1]):
+                    small.append(args[i])
+                    big.append(small)
+                else:
+                    big.append(small)
             big.append(args[i])
         else:
             if args[i] - 1 == args[i-1]:
                 small.append(args[i])
                 big.append(small)
-
             else:
                 big.append(args[i])
         i += 1
+      
     return big
         
 
