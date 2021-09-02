@@ -16,18 +16,17 @@ def fizz_buzz():
             return "No buzz no fizz!"
     
     n = input("Please be so kind, insert number, or 'q' for quit: ")
-    
-    if n == 'q':
-        print("Bye! Have a good time.")
-    else:    
-        while n != 'q':
-            if isinstance(n, int):
-                print(n)
-                print(swicher(n))
-                # return swicher(n)                
-                n = input("Please be so kind, insert number, or 'q' for quit: ")
-            else:
-                n = input("That was not number. Please be so kind, insert number, or 'q' for quit: ")
-        print("Bye! Have a good time.")
+       
+    while n != 'q':
+        if n.isdigit(): 
+            m = int(n)
+            print(swicher(m))
+            # return swicher(n)                
+            m = input("Please be so kind, insert number, or 'q' for quit: ")
+        else:
+            m = input("That was not number. Please be so kind, insert number, or 'q' for quit: ")
+        n = m
+    print("Bye! Have a good time.")
 
 fizz_buzz()
+
