@@ -1,35 +1,14 @@
-def swicher(n):
-        if n % 3 == 0 and n % 5 == 0:
-            return "fizzbuzz"
-        if n % 3 == 0:
-            return "fizz"
-        if n % 5 == 0:
-            return "buzz"
-        else:
-            return "No buzz no fizz!"
-'''
-n = 7
-while n != 'q':
-    if isinstance(n, int):
-        print(n)
-        #print(swicher(n))
-        # return swicher(n)
-        m = input("Please be so kind, insert number, or 'q' for quit: ")                        
-    else:
-        m = input("That was not number. Please be so kind, insert number, or 'q' for quit: ")
-    n = m
-    print (n)
-print("Bye! Have a good time.")
-'''
-n = input("skaicius: ")
-while n != 'q':
-    if n.isdigit(): 
-        m = int(n)
-        print (n)
-        m = input("ivesk kita skaiciu arba 'q': ")
-    else:
-        m = input("ne skaicius ivesk skaiciu arba 'q': ")
-    n = m
-print ("bye!") 
+def error_handler(x, y):
+    if isinstance(x, int) == False or isinstance(y, int) == False:
+        print("Error: parameters are not digits.")
+        return False
+    if x < 1 or y < 1:
+        print("Error: Parameters are too small.")
+        return False
+    return True
 
-# print (swicher(m))
+print(error_handler(10, 1))
+
+out = ''
+out += "\\"+"\n" +'a'
+print(out)
