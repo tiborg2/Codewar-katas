@@ -22,37 +22,33 @@ def ornament (x, y):
         return True
     def printer(x, y):
         out = ''
-        for lin in range(1, y):
-            for col in range(1, x):
+        for lin in range(1, y+1):
+            for col in range(1, x+1):
                 if col == 1 and lin == 1:
-                    out += '/'
-                    print (out)
+                    out = '/'            
                 elif col > 1 and col < x and lin == 1:
-                    out += '*'
-                    print (out)
+                    out += '*'            
                 elif col == x and lin == 1:
-                    out += "\\"+"\n"
-                    print (out)
-                elif col == 1 and lin > 1 and lin < y:
+                    out += "\\"+"\n"           
+                elif (col == 1) and (lin > 1) and (lin < y):
                     out += '*'
                 elif col == x and lin > 1 and lin < y:
                     out += '*'+"\n"
                 elif col == 1 and lin == y:
                     out += "\\"
+                elif col > 1 and col < x and lin == y:
+                    out += "*"
                 elif col == x and lin == y:
                     out += "/"
                 else:
                     out+= " "
-            
-            return out
-    
+        return out
 
-                
     if error_handler(x , y) == False:
-        return False
+        return "Program quit."       
     else:
         out = printer(x, y)
     return out
-
-ornament(4, 4)
+#Test line.
+print(ornament(2, 'e'))
     
