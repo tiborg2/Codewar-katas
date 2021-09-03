@@ -9,6 +9,6 @@
                         |*      3. "s" for "Scissors";  *|
                         |*                              *|
                         |*           OR                 *|
-                        |*      "q" for Quit.           *|
+                        |*      "q" to Quit.            *|
                         |*                              *|
                         **********--tiborg--**************
