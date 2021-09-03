@@ -8,6 +8,7 @@
                         |*      2. "p" for "Paper";     *|
                         |*      3. "s" for "Scissors";  *|
                         |*                              *|
-                        |*      OR "q" for quit.        *|
+                        |*           OR                 *|
+                        |*      "q" for Quit.           *|
                         |*                              *|
                         **********--tiborg--**************
