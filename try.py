@@ -38,4 +38,4 @@ def printer(x, y):
     return out
     #out = out.lstrip(' ')
         
-print (printer(4, 10))
+print (printer(4, 5))
