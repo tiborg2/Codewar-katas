@@ -1,18 +1,21 @@
-import itertools as itt
-def permutations (str):
-    tpl = tuple(str)
-    temp = list(itt.permutations(tpl, len(tpl)))
+from itertools import permutations
+from datetime import datetime
+t1 = datetime.now()
+def perm (str):    
+    x = list(permutations(str, len(str)))
     word = ''
-    res = []
-    ''' for item in temp:
-        word = word.join(item)
-        res.append(word)'''
-    
-    print (tpl)
-    print (temp)
-    print (res)
-    '''for i in len(tpl):
-        if tpl[i] == str:
-            return tpl[i]'''  
+    temp =[]
+    for i in x:
+        print(i)
+        word = ''.join(i)
+        temp.append(word)
+        temp.sort() 
+    for ind in range(len(temp)):
+        if temp[ind] == str:            
+            return ind
+    return -1    
 
-print(permutations('AABA'))
+
+
+print(perm('DACA'))
+print (datetime.now() - t1)
