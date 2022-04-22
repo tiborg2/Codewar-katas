@@ -49,7 +49,7 @@ def prime_search(dst, num, num2):
 
     
    
-print(prime_search(90, 100, 100000))
+print(prime_search(91, 100, 100000))
 finish = timer()
 print ("Execution time in ms:", (finish - start)*100)
 

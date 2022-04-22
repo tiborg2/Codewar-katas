@@ -8,5 +8,5 @@ def permutations(string):
             temp += char
         out.append(temp)
     return out
-print(permutations("B_A."))
+print(permutations("BDA"))
 

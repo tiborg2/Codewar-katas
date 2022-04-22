@@ -15,7 +15,7 @@ for i in range(len(b)):
 count_1 = 0
 for item in dct_a:
     if item in dct_a:
-        coun
+        count_1+=1
 
 
 print (dct_a, '\n', dct_b)
