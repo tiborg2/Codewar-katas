@@ -13,7 +13,7 @@ def lovefunc( flower1, flower2 ):
     else:
         return False
 
-print(lovefunc(8, 9))
+print(lovefunc(8, 8))
 
 
 
