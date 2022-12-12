@@ -1,8 +1,9 @@
 with open ('/home/tiborg/projects/Codewar-katas/AOC/AOC01/input.txt', 'r') as input:
 	data = (input.readlines())
-number_list = []
+
 
 #converting string to int
+number_list = []
 for element in data: 
 	if element != '\n':
 		digit = int(element[:-1])

@@ -48,7 +48,7 @@ for i in rezult_list:
 	if (fst == 'A' and snd == "Y") | (fst == 'B' and snd == "Z") | (fst == 'C' and snd == "X"):
 		wdl_sum+=6
 		wins+=1
-
+#final score
 score = selection_sum + wdl_sum
 
 print (f'{selection_sum}\n{wdl_sum}\n{score}')
