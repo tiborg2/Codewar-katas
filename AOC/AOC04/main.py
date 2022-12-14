@@ -47,20 +47,28 @@ def sorter (arr):
 srt_final = sorter(final)
 #print (srt_final[51])
 count = 0
+sec1 = 0
+sec2 = 0
+
 test = []
 for item in srt_final:
 	x1 = item[0][0]
 	y1 = item[0][1]
 	x2 = item[1][0]
 	y2 = item[1][1]
-	print (item,x1,y1,x2,y2)
+	#print (item,x1,y1,x2,y2)
 	
 	if (x1 == x2) or (y1 == y2):
 		count+=1
+		sec1+=1
 		test.append(item)
-	if y1 > y2:
+		#print (item,x1,y1,x2, y2)
+		
+	if (x1 < x2) and (y1 > y2):
 		count+=1
+		sec2+=1
 		test.append(item)
+		#print (item,x1, y2,x2,y2)
 	
-	print(len(test), count)
+print(len(test))
 	
